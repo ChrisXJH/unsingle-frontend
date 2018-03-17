@@ -1,0 +1,22 @@
+{
+  "name": "unsingle-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisXJH/unsingle-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisXJH/unsingle-frontend/issues"
+  },
+  "homepage": "https://github.com/ChrisXJH/unsingle-frontend#readme",
+  "dependencies": {
+    "electron": "^1.8.4"
+  }
+}
