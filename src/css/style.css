@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    background-color: #FFE26A;
+    box-sizing: border-box;
+}
+
+#header h3 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+
+}
+
+#menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 6px;
+}
+
+#menu .item {
+    border-top: 6px solid #fff;
+}
+
+#menu .item:hover {
+    border-top: 6px solid #FFE26A;
+}
+
+#menu img {
+    border: 0;
+    border-radius: 0;
+}
+
+#main-page {
+    overflow-y: scroll;
+}
+
+#main-page .page .pageItems .items .item .eventCard {
+    border: 1px solid #FFE26A;
+    border-radius: 4px;
+    min-height: 40px;
+    margin-top: 18px;
+}
+
+#main-page .page .pageItems .items .item .eventCard .caption {
+    color: #FFE26A;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#main-page .page {
+    padding: 34px 14px;
+    display: none;
+}
+
+#main-page .page.active {
+    display: block;
+}
