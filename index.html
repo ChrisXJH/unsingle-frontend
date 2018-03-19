@@ -2,128 +2,70 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>Yichi</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <!-- <link rel="stylesheet" href="./src/lib/bootstrap/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="./src/lib/bootstrap/css/bootstrap-theme.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body class="ui">
 
-    <div id="app">
-        <div class="">
-            <div id="header">
-                <h3 id="caption">Explore</h3>
-            </div>
-            <div id="login" class="page">
-                <div class="container">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Username</label>
-                            <input type="username" class="form-control" id="username"placeholder="Enter username">
+    <div class="header">
+        <a href="javascript:;" class="goback-btn">
+            <!-- <img src="" alt=""> -->
+        </a>
+        <p class="title">Explore</p>
+    </div>
+
+    <div class="tab" style="padding-top: 56px;">
+        <div class="tab-panels">
+
+            <div class="tab-panel active">
+                <div class="page-content">
+                    <div class="search-bar">
+                        <div class="search-bar-box">
+                            <input type="text" name="" value="" placeholder="Search">
+                            <a href="javascript:;" class="cancel-btn">Cancel</a>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-
-                        <span class="btn btn-primary" onclick="login()">Login</span>
-                    </form>
-                </div>
-
-            </div>
-            <div id="main-content">
-                <div id="main-page">
-                    <div id="explore" class="page">
-                        <div class="pageItems">
-                            <ul class="items">
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="message" class="page">
-                        <div class="pageItems">
-                            <ul class="items">
-                                <li class="item">
-                                    <div class="eventCard">
-                                        <p class="caption">Matched</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="events" class="page">
-                        <div class="pageItems">
-                            <ul class="items">
-                                <li class="item">
-                                    <div class="eventCard">
-                                        <p class="caption">Math 137 Midterm Review</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="settigs" class="page">
-
-                    </div>
-
-
-                    <div id="eventDetails" class="page active">
-
+                        <label class="search-bar-label">
+                            <span>Search</span>
+                        </label>
                     </div>
 
                 </div>
-
-                <div id="menu">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-3 item" onclick="explorePage()">
-                                <img src="./graphics/Explore.png" alt="" class="img-thumbnail">
-                            </div>
-                            <div class="col-3 item" onclick="messagePage()">
-                                <img src="./graphics/Message.png" alt="" class="img-thumbnail">
-                            </div>
-                            <div class="col-3 item" onclick="eventsPage()">
-                                <img src="./graphics/Events.png" alt="" class="img-thumbnail">
-                            </div>
-                            <div class="col-3 item" onclick="settingsPage()">
-                                <img src="./graphics/Settings.png" alt="" class="img-thumbnail">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="tab-panel">
+                page2
+            </div>
+            <div class="tab-panel">
+                page3
+            </div>
+            <div class="tab-panel">
+                page4
+            </div>
+        </div>
+        <div class="tab-bar">
+            <a href="javascript:;" class="tab-bar-item active">
+                <img src="./graphics/explore_icon.png" class="tab-bar-icon">
+                <p class="tab-bar-label">Explore</p>
+            </a>
+            <a href="javascript:;" class="tab-bar-item">
+                <div class="tab-bar-icon-content">
+
+                    <img src="./graphics/message_icon.png" class="tab-bar-icon">
+                    <span class="badge" style="position:absolute; top: -.6em; right: -.6em;">2</span>
+                </div>
+                <p class="tab-bar-label">Message</p>
 
 
+            </a>
+            <a href="javascript:;" class="tab-bar-item">
+                <img src="./graphics/events_icon.png" class="tab-bar-icon">
+                <p class="tab-bar-label">Events</p>
+            </a>
+            <a href="javascript:;" class="tab-bar-item">
+                <img src="./graphics/settings_icon.png" class="tab-bar-icon">
+                <p class="tab-bar-label">Settings</p>
+            </a>
         </div>
     </div>
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
-    <!-- Insert this line after script imports -->
-    <script>if (window.module) module = window.module;</script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./src/js/event.class.js">
-
-    </script>
-    <script type="text/javascript" src="./src/js/account.class.js">
-    </script>
-
-    <script type="text/javascript" src="./src/js/page_router.js">
-
-    </script>
-    <script type="text/javascript">
-
-    $(document).ready(function () {
-        $("#main-content").hide();
-        var mainPage = $("#main-page");
-        mainPage.css("height", $(window).height() - $("#header").height() - $("#menu").height() + 'px');
-    });
-</script>
 </body>
 </html>
