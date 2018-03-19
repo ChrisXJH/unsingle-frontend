@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisXJH/unsingle-frontend.git"
+    "url": "git+https://github.com/ChrisXJH/yichi-frontend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChrisXJH/unsingle-frontend/issues"
+    "url": "https://github.com/ChrisXJH/yichi-frontend/issues"
   },
-  "homepage": "https://github.com/ChrisXJH/unsingle-frontend#readme",
+  "homepage": "https://github.com/ChrisXJH/yichi-frontend#readme",
   "dependencies": {}
 }
