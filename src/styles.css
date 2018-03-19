@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 * {
     padding: 0;
     margin: 0;
@@ -100,6 +101,9 @@ body, html {
     vertical-align: middle;
 }
 
+
+/* Search box */
+
 .ui .search-bar {
     position: relative;
     padding: 8px 10px;
@@ -108,21 +112,18 @@ body, html {
 
 .ui .search-bar .search-bar-box {
     position: relative;
-    display: none;
+    display: block;
+    /* display: none; */
 }
 
-.ui .search-bar:hover .search-bar-box {
-    display: flex;
-}
-
-.ui .search-bar .search-bar-box input, .ui .search-bar .search-bar-box .cancel-btn, .ui .search-bar .search-bar-label {
+.ui .search-bar .search-bar-box input, .ui .search-bar .search-bar-box .cancel-btn {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 14px;
     font-size: 14px;
 }
 
-.ui .search-bar .search-bar-box input, .ui .search-bar .search-bar-label {
+.ui .search-bar .search-bar-box input {
     box-sizing: border-box;
     background-color: #eee;
     border-radius: 18px;
@@ -130,27 +131,36 @@ body, html {
 }
 
 .ui .search-bar .search-bar-box input {
-    flex: 11;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
     outline: 0;
     border: 0;
     color: #666;
 }
 
 .ui .search-bar .search-bar-box .cancel-btn {
-    flex: 1;
+    display: none;
     text-decoration: none;
     text-align: right;
     color: #FFE26A;
     padding: 4px 0 4px 10px;
 }
 
-.ui .search-bar .search-bar-label {
-    display: inline-block;
-    text-align: center;
-    color: #888;
-    width: 100%;
+/* Input effect */
+.ui .search-bar:hover .search-bar-box {
+    display: flex;
 }
 
-.ui .search-bar:hover .search-bar-label {
-    display: none;
+.ui .search-bar:hover .search-bar-box input {
+    transition: 0.5s;
+    flex: 11;
+    text-align: left;
+}
+
+.ui .search-bar:hover .search-bar-box .cancel-btn {
+    transition: 0.5s;
+    width: auto;
+    display: inline-block;
+    flex: 1;
 }

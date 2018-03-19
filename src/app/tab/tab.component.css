@@ -1,0 +1,9 @@
+.tab {
+    padding-top: 56px;
+}
+
+.tab .badge {
+    position:absolute;
+    top: -.6em;
+    right: -.6em;
+}
