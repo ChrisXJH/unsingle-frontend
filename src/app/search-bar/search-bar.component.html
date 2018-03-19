@@ -1,6 +1,9 @@
-<div class="search-bar">
+<div class="search-bar" [ngClass]="{'active': isActive()}">
     <div class="search-bar-box">
-        <input type="text" name="" value="" placeholder="Search">
-        <a href="javascript:;" class="cancel-btn">Cancel</a>
+        <input type="text" name="" value="" placeholder="Search" (click)="activateSearch()" [(ngModel)]="searchValue">
+        <a href="javascript:;" class="cancel-btn" (click)="deactivateSearch()">Cancel</a>
+    </div>
+    <div class="search-bar-results">
+        aaa
     </div>
 </div>
