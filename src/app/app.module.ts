@@ -7,6 +7,7 @@ import { TabComponent } from './tab/tab.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { TabPanelComponent } from './tab-panel/tab-panel.component';
+import { ExplorePanelComponent } from './explore-panel/explore-panel.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { TabPanelComponent } from './tab-panel/tab-panel.component';
     TabComponent,
     HeaderComponent,
     SearchBarComponent,
-    TabPanelComponent
+    TabPanelComponent,
+    ExplorePanelComponent
   ],
   imports: [
     BrowserModule,

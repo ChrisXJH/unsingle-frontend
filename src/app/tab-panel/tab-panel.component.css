@@ -1,0 +1,8 @@
+.tab-panel {
+    height: 100%;
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}

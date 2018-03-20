@@ -30,4 +30,8 @@ export class SearchBarComponent implements OnInit {
         return this.active;
     }
 
+    isSeachValueEmpty(): boolean {
+        return this.searchValue == "" || this.searchValue == null;
+    }
+
 }
