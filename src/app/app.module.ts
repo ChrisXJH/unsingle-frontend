@@ -11,19 +11,19 @@ import { ExplorePanelComponent } from './explore-panel/explore-panel.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TabComponent,
-    HeaderComponent,
-    SearchBarComponent,
-    TabPanelComponent,
-    ExplorePanelComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        TabComponent,
+        HeaderComponent,
+        SearchBarComponent,
+        TabPanelComponent,
+        ExplorePanelComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
