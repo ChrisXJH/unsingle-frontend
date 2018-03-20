@@ -6,6 +6,7 @@
     <div class="search-bar-results-wrap">
 
         <div class="search-bar-results">
+
             <div class="suggested-results-wrap" *ngIf="isSeachValueEmpty()">
                 <p class="caption">Hot searches</p>
 
@@ -16,9 +17,13 @@
                     <li class="result suggested-result"><span class="badge">DC Library & Learn</span></li>
                 </ul>
             </div>
-            <ul class="results search-results" *ngIf="!isSeachValueEmpty()">
-                <li class="result search-result">Search "{{searchValue}}""</li>
-            </ul>
+
+            <div class="search-results-wrap" *ngIf="!isSeachValueEmpty()">
+                <ul class="results search-results">
+                    <li class="result search-result">Search "{{searchValue}}"</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>
