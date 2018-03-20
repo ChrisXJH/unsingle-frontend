@@ -59,3 +59,11 @@
     padding-bottom: 80px;
     overflow: auto;
 }
+
+.tab .tab-panels .tab-panel-root {
+    display: none;
+}
+
+.tab .tab-panels .tab-panel-root.active {
+    display: block;
+}
