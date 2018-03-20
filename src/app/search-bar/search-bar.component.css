@@ -77,6 +77,7 @@
 
 .search-bar .search-bar-results-wrap .caption {
     padding-bottom: 10px;
+    font-size: 18px;
 }
 
 .search-bar .search-bar-results-wrap .results .result {
@@ -97,7 +98,7 @@
 
 .search-bar .search-bar-results-wrap .search-bar-results .suggested-result {
     display: inline;
-    line-height: 1.8em;
+    line-height: 2.2em;
 }
 
 .search-bar .search-bar-results-wrap .search-bar-results .suggested-result .badge {
@@ -105,7 +106,7 @@
     display: inline-block;
     background-color: rgba(255, 226, 106, 1);
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* Active effect */
