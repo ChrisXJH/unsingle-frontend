@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'Yichi';
+
+    activePanel: string = 'explore';
+
+    onTabChange(panelName: string): void {
+        this.activePanel = panelName;
+    }
+
 }

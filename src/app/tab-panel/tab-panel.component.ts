@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabPanelComponent implements OnInit {
 
-
+    active: boolean;
 
     constructor() { }
 
     ngOnInit() {
+    }
+
+    isActive(): boolean {
+        return this.active;
     }
 
 }

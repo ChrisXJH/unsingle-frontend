@@ -1,32 +1,35 @@
 <div class="tab">
     <div class="tab-panels">
 
-        <app-explore-panel></app-explore-panel>
+        <app-explore-panel class="tab-panel-root" [class.active]="isPanelActive('explore')"></app-explore-panel>
+        <app-tab-panel class="tab-panel-root" [class.active]="isPanelActive('settings')"></app-tab-panel>
 
 
     </div>
     <div class="tab-bar">
-        <a href="javascript:;" class="tab-bar-item active">
+
+        <a href="javascript:;" class="tab-bar-item" [class.active]="isPanelActive('explore')" (click)="activatePanel('explore')">
             <img src="./assets/img/explore_icon.png" class="tab-bar-icon">
             <p class="tab-bar-label">Explore</p>
         </a>
-        <a href="javascript:;" class="tab-bar-item">
-            <div class="tab-bar-icon-content">
 
+        <a href="javascript:;" class="tab-bar-item" [class.active]="isPanelActive('message')" (click)="activatePanel('message')">
+            <div class="tab-bar-icon-content">
                 <img src="./assets/img/message_icon.png" class="tab-bar-icon">
                 <span class="badge">2</span>
             </div>
             <p class="tab-bar-label">Message</p>
-
-
         </a>
-        <a href="javascript:;" class="tab-bar-item">
+
+        <a href="javascript:;" class="tab-bar-item" [class.active]="isPanelActive('events')" (click)="activatePanel('events')">
             <img src="./assets/img/events_icon.png" class="tab-bar-icon">
             <p class="tab-bar-label">Events</p>
         </a>
-        <a href="javascript:;" class="tab-bar-item">
+
+        <a href="javascript:;" class="tab-bar-item" [class.active]="isPanelActive('settings')" (click)="activatePanel('settings')">
             <img src="./assets/img/settings_icon.png" class="tab-bar-icon">
             <p class="tab-bar-label">Settings</p>
         </a>
+
     </div>
 </div>

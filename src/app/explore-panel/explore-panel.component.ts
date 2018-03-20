@@ -6,11 +6,12 @@ import { TabPanelComponent } from '../tab-panel/tab-panel.component';
     templateUrl: './explore-panel.component.html',
     styleUrls: ['./explore-panel.component.css']
 })
-export class ExplorePanelComponent implements TabPanelComponent {
+export class ExplorePanelComponent extends TabPanelComponent {
 
-    constructor() { }
+    constructor() { super(); }
 
     ngOnInit() {
+        this.active = true;
     }
 
 }
