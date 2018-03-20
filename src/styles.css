@@ -5,7 +5,15 @@
     font-family: 'Arial';
 }
 
+li {
+    list-style: none;
+}
+
 body, html {
+    height: 100%;
+}
+
+app-tab-panel, app-explore-panel {
     height: 100%;
 }
 
@@ -13,80 +21,10 @@ body, html {
     position: relative;
 }
 
-.ui .header {
-    background-color: #FFE26A;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.ui .header .title {
-    text-align: center;
-    font-size: 22px;
-    color: #fff;
-    padding: .5em 0;
-}
-
-.ui .tab {
-    position: relative;
-    box-sizing: border-box;
-    height: 100%;
-}
-
-.ui .tab-bar {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 500;
-}
-
-.ui .tab-bar .tab-bar-item {
-    flex: 1;
-    padding: 8px 0 0 0;
-    text-align: center;
-    text-decoration: none;
-    border-top: 8px solid #fff;
-}
-
-.ui .tab-bar .tab-bar-item.active {
-    border-top-color: #FFE26A;
-}
-
-.ui .tab-bar .tab-bar-item .tab-bar-label {
-    line-height: 1.8;
+.ui .caption {
     color: #808080;
-    font-size: 15px;
 }
 
-.ui .tab-bar .tab-bar-item .tab-bar-icon {
-    height: 36px;
-    width: 36px;
-}
-
-.ui .tab-bar .tab-bar-item .tab-bar-icon-content {
-    display: inline-block;
-    position: relative;
-}
-
-.ui .tab .tab-panels {
-    box-sizing: border-box;
-    height: 100%;
-    padding-bottom: 50px;
-    overflow: auto;
-}
-
-.ui .tab .tab-panels .tab-panel {
-    height: 100%;
-    display: none;
-}
-
-.ui .tab .tab-panels .tab-panel.active {
-    display: block;
-}
 
 .ui .badge {
     display: inline-block;

@@ -3,7 +3,22 @@
         <input type="text" name="" value="" placeholder="Search" (click)="activateSearch()" [(ngModel)]="searchValue">
         <a href="javascript:;" class="cancel-btn" (click)="deactivateSearch()">Cancel</a>
     </div>
-    <div class="search-bar-results">
-        aaa
+    <div class="search-bar-results-wrap">
+
+        <div class="search-bar-results">
+            <div class="suggested-results-wrap" *ngIf="isSeachValueEmpty()">
+                <p class="caption">Suggested</p>
+
+                <ul class="results suggested-results">
+                    <li class="result suggested-result"><span class="badge">Math 137</span></li>
+                    <li class="result suggested-result"><span class="badge">Werewolf Night!</span></li>
+                    <li class="result suggested-result"><span class="badge">HTML Learning</span></li>
+                    <li class="result suggested-result"><span class="badge">DC Library & Learn</span></li>
+                </ul>
+            </div>
+            <ul class="results search-results" *ngIf="!isSeachValueEmpty()">
+                <li class="result search-result">Search "{{searchValue}}""</li>
+            </ul>
+        </div>
     </div>
 </div>
