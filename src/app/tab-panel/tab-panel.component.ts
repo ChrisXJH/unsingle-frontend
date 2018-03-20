@@ -14,7 +14,7 @@ export class TabPanelComponent implements OnInit {
     ngOnInit() {
     }
 
-    isActive: boolean {
+    isActive(): boolean {
         return this.active;
     }
 
