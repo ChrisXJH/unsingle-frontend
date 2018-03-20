@@ -73,10 +73,6 @@
 
     max-height: 0;
     opacity: 0;
-
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-
 }
 
 .search-bar .search-bar-results-wrap .caption {
@@ -143,6 +139,6 @@
     height: 100%;
     opacity: 1;
 
-    -webkit-transition: opacity 0.4s ease-in-out;
-    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
