@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { TabPanelComponent } from './tab-panel/tab-panel.component';
 import { ExplorePanelComponent } from './explore-panel/explore-panel.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { ExplorePanelComponent } from './explore-panel/explore-panel.component';
         HeaderComponent,
         SearchBarComponent,
         TabPanelComponent,
-        ExplorePanelComponent
+        ExplorePanelComponent,
     ],
     imports: [
         BrowserModule,

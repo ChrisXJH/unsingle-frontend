@@ -3,5 +3,6 @@
 }
 
 .panel-content {
+    padding-top: 6px;
     height: 100%;
 }
