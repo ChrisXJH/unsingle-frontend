@@ -55,6 +55,7 @@
 }
 
 .search-bar .search-bar-results-wrap {
+    display: none;
     position: relative;
     box-sizing: border-box;
     z-index: 100;
@@ -133,6 +134,10 @@
 
     -webkit-transition: max-width 0.4s ease-in-out, padding-left 0.4s ease-in-out, opacity 0.4s ease-in-out;
     transition: max-width 0.4s ease-in-out, padding-left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.search-bar.active .search-bar-results-wrap {
+    display: block;   
 }
 
 .search-bar.active .search-bar-results-wrap .search-bar-results {
